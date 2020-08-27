@@ -201,3 +201,39 @@ a {
 }
 
 // typography end
+
+
+// promo-section
+.promo {
+    &--boxes {
+        display: flex;
+        margin-top: 10.5rem;
+        justify-content: center;
+        // align-items: center;
+    }
+
+    &--box {
+        width: 20%;
+        margin-right: 8rem;
+        font-size: 2rem;
+        text-align: center;
+        font-family: "Samsung One";
+        position: relative;
+
+        &:last-child:after {
+            content: none;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -55px;
+            top: 50px;
+            width: 12px;
+            height: 12px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    }
+}
