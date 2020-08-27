@@ -16,8 +16,16 @@ body {
     font-family: 'SamsungOne';
 }
 
+.center {
+    text-align: center !important;
+}
+
 a {
     text-decoration: none;
+}
+
+.topmargin1 {
+    margin-top: 7.5rem;
 }
 
 //Navigation
@@ -200,14 +208,22 @@ a {
     text-align: center;
 }
 
+.simpletext {
+    font-size: 2.6rem;
+    font-family: 'Samsung One';
+}
+
 // typography end
 
 
 // promo-section
 .promo {
+
+    margin: 10rem 0;
+
     &--boxes {
         display: flex;
-        margin-top: 10.5rem;
+        margin: 8.5rem 0;
         justify-content: center;
         // align-items: center;
     }
@@ -235,5 +251,10 @@ a {
             background-color: #000;
             border-radius: 50%;
         }
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        text-align: center;
     }
 }
