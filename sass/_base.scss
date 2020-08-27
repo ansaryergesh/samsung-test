@@ -1,0 +1,29 @@
+@import url('../fonts.css');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+}
+
+body {
+    font-family: 'SamsungOne';
+}
+
+.center {
+    text-align: center !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topmargin1 {
+    margin-top: 7.5rem;
+}

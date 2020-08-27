@@ -19,60 +19,6 @@ a {
 .topmargin1 {
   margin-top: 7.5rem; }
 
-.navigation {
-  background-color: white;
-  position: relative;
-  padding: .9rem 6rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: black; }
-  .navigation--search {
-    font-size: 80rem; }
-  .navigation--menu {
-    margin: 0 auto; }
-    .navigation--menu ul {
-      margin: 0;
-      list-style: none;
-      text-align: left; }
-      .navigation--menu ul li {
-        float: none;
-        display: inline-block; }
-        .navigation--menu ul li:nth-child(n+5) {
-          float: right; }
-  .navigation a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0 1.5rem; }
-  .navigation--logo img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 95px; }
-
-.header {
-  height: 75vh;
-  background-image: url(../img/samsung_delivers-1440.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  margin-bottom: 9.2rem; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__links {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .header__links .btn:first-child {
-      margin-right: 2rem; }
-    .header__links .btn--white {
-      font-size: 1.5rem; }
-
 .btn {
   text-transform: uppercase;
   color: #001320;
@@ -138,6 +84,64 @@ a {
   font-size: 2.6rem;
   font-family: 'Samsung One'; }
 
+.navigation {
+  background-color: white;
+  position: relative;
+  padding: .9rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black; }
+  .navigation--search {
+    font-size: 80rem; }
+  .navigation--menu {
+    margin: 0 auto; }
+    .navigation--menu ul {
+      margin: 0;
+      list-style: none;
+      text-align: left; }
+      .navigation--menu ul li {
+        float: none;
+        display: inline-block;
+        margin: 0 1.5rem; }
+        .navigation--menu ul li:first-child {
+          margin: 0 !important; }
+        .navigation--menu ul li:last-child {
+          margin: 0; }
+        .navigation--menu ul li:nth-child(n+5) {
+          float: right; }
+  .navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8); }
+  .navigation--logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 9.5rem; }
+
+.header {
+  height: 75vh;
+  background-image: url(../img/samsung_delivers-1440.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 9.2rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header__links .btn:first-child {
+      margin-right: 2rem; }
+    .header__links .btn--white {
+      font-size: 1.5rem; }
+
 .promo {
   margin: 10rem 0; }
   .promo--boxes {
@@ -166,3 +170,23 @@ a {
   .promo .btn {
     font-size: 1.2rem;
     text-align: center; }
+
+@media (max-width: 1200px) {
+  .navigation {
+    font-size: 95%; } }
+
+@media (max-width: 950px) {
+  .navigation {
+    font-size: 80%; } }
+
+@media (max-width: 850px) {
+  .navigation {
+    font-size: 75%; } }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 20.5%; }
+  .navigation {
+    position: relative; }
+    .navigation--menu {
+      display: none; } }

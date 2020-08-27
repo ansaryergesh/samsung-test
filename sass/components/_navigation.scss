@@ -1,0 +1,60 @@
+.navigation {
+    background-color: white;
+    position: relative;
+    padding: .9rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+
+    &--search {
+        font-size: 80rem;
+    }
+
+    &--menu {
+        margin: 0 auto;
+
+        ul {
+            margin: 0;
+            list-style: none;
+            text-align: left;
+
+            li {
+                float: none;
+                display: inline-block;
+                margin: 0 1.5rem;
+
+                &:first-child {
+                    margin: 0 !important;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &:nth-child(n+5) {
+                    float: right;
+                }
+            }
+
+        }
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+
+
+    }
+
+    &--logo {
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 9.5rem;
+        }
+
+    }
+}

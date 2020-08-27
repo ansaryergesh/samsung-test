@@ -1,0 +1,47 @@
+.heading-primary {
+
+    line-height: 3.1rem;
+
+    &--main {
+        display: block;
+        font-size: 5.9rem;
+        letter-spacing: 0px;
+        line-height: 85px;
+        color: #000000;
+        font-family: "DejaVuSans,AdobeInvisFont,MyriadHebrew-Regular,SamsungSharpSansK-Bold"
+
+    }
+
+    &--sub {
+        font-weight: normal;
+        display: block;
+        font-size: 2.5rem;
+        letter-spacing: 0px;
+        color: #001320;
+        font-family: "Samsung One";
+        text-align: center;
+    }
+
+    &--little {
+        font-weight: normal;
+        font-family: "Samsung One";
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.6rem;
+    letter-spacing: 0px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Samsung Sharp Sans K";
+    text-align: center;
+}
+
+.simpletext {
+    font-size: 2.6rem;
+    font-family: 'Samsung One';
+}
