@@ -1,0 +1,63 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: silver;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16x;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-bottom: 6px solid rgba(120, 120, 120, .21);
+    font-size: 16px;
+    padding: 12px 110px;
+
+}
+
+.nav .selected {
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.left {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+.center {
+    flex-grow: 1;
+}
+
+.center .logo {
+    /* width: 100%; */
+    height: 95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 9.5rem;
+}

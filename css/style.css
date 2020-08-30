@@ -8,7 +8,7 @@ html {
     box-sizing: inherit; }
 
 body {
-  font-family: 'SamsungOne'; }
+  font-family: 'SamsungSharpSans', 'SamsungOne', arial, sans-serif; }
 
 .center {
   text-align: center !important; }
@@ -23,6 +23,7 @@ a {
   text-transform: uppercase;
   color: #001320;
   letter-spacing: 2px;
+  cursor: pointer;
   font-family: "Samsung One";
   transition: .5s all; }
   .btn--white {
@@ -50,12 +51,11 @@ a {
       transform: translateX(-50%); }
 
 .heading-primary {
-  line-height: 3.1rem; }
+  line-height: 2.5rem; }
   .heading-primary--main {
     display: block;
     font-size: 5.9rem;
     letter-spacing: 0px;
-    line-height: 85px;
     color: #000000;
     font-family: "DejaVuSans,AdobeInvisFont,MyriadHebrew-Regular,SamsungSharpSansK-Bold"; }
   .heading-primary--sub {
@@ -65,10 +65,12 @@ a {
     letter-spacing: 0px;
     color: #001320;
     font-family: "Samsung One";
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .heading-primary--little {
     font-weight: normal;
-    font-family: "Samsung One"; }
+    font-family: "Samsung One";
+    font-size: 1.8rem; }
     .heading-primary--little span {
       display: block; }
 
@@ -79,6 +81,8 @@ a {
   font-weight: bold;
   font-family: "Samsung Sharp Sans K";
   text-align: center; }
+  .heading-secondary span {
+    display: block; }
 
 .simpletext {
   font-size: 2.6rem;
@@ -87,7 +91,7 @@ a {
 .navigation {
   background-color: white;
   position: relative;
-  padding: .9rem;
+  padding: .9rem 7rem .9rem 2rem;
   font-size: 1.4rem;
   font-weight: bold;
   color: black; }
@@ -101,8 +105,9 @@ a {
       text-align: left; }
       .navigation--menu ul li {
         float: none;
-        display: inline-block;
-        margin: 0 1.5rem; }
+        display: inline-block; }
+        .navigation--menu ul li:not(:last-child), .navigation--menu ul li:not(:first-child) {
+          margin: 0 1.5rem; }
         .navigation--menu ul li:first-child {
           margin: 0 !important; }
         .navigation--menu ul li:last-child {
@@ -120,11 +125,19 @@ a {
     transform: translate(-50%, -50%);
     height: 9.5rem; }
 
+@media (max-width: 1200px) {
+  .navigation {
+    padding: .9rem 0rem;
+    font-size: 1.2rem; }
+    .navigation li:first-child, .navigation li:last-child {
+      margin: 0 !important; }
+    .navigation a {
+      text-transform: none; } }
+
+.imgdesktop {
+  width: 100%; }
+
 .header {
-  height: 75vh;
-  background-image: url(../img/samsung_delivers-1440.jpg);
-  background-size: cover;
-  background-position: top;
   position: relative;
   margin-bottom: 9.2rem; }
   .header__text-box {
@@ -171,22 +184,80 @@ a {
     font-size: 1.2rem;
     text-align: center; }
 
-@media (max-width: 1200px) {
-  .navigation {
-    font-size: 95%; } }
+.input-block {
+  display: flex;
+  flex-direction: column; }
 
-@media (max-width: 950px) {
-  .navigation {
-    font-size: 80%; } }
+.contact-wrap p {
+  font-size: 1.3rem; }
 
-@media (max-width: 850px) {
-  .navigation {
-    font-size: 75%; } }
+.contact-wrap .btn {
+  margin-top: 3rem; }
+
+.contact-form {
+  margin: 0 auto;
+  padding: 7rem 5rem 5rem 5rem;
+  border: 0.1px solid #acabab;
+  font-size: 1.4rem;
+  font-family: "DejaVuSans,AdobeInvisFont,MyriadHebrew-Regular,SamsungOne-700"; }
+
+.checkbox-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .checkbox-block input {
+    margin-right: 15px;
+    height: 2.3rem;
+    width: 2.3rem; }
+
+.input-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+  .input-blocks input,
+  .input-blocks textarea {
+    border: 0.1px solid #acabab;
+    height: 5rem;
+    max-height: 5rem; }
+
+.btn-submit {
+  grid-column: 2; }
+
+.fullwidth {
+  grid-column: span 2; }
+
+.phones .btn {
+  padding: 1.6rem 7.5rem !important; }
+
+.phones img {
+  width: 100%; }
+
+.phones table {
+  width: 60%;
+  border-collapse: collapse;
+  font-weight: normal;
+  margin: 8rem auto;
+  border: 1px solid #DEDDDD; }
+  .phones table tr td {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "SamsungOne-400";
+    border-bottom: 1px solid #DEDDDD; }
+  .phones table tr th,
+  .phones table tr td {
+    padding: 1.8rem 0; }
+  .phones table tr th {
+    font-size: 2.5rem;
+    font-family: "SamsungOne-800";
+    background-color: #DEDDDD; }
+
+@media (min-width: 1440px) {
+  .contact-wrap {
+    width: 35% !important;
+    margin: auto; } }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 20.5%; }
-  .navigation {
-    position: relative; }
-    .navigation--menu {
-      display: none; } }
+  .phones table {
+    width: 90%; } }

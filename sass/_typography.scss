@@ -1,12 +1,12 @@
 .heading-primary {
 
-    line-height: 3.1rem;
+    line-height: 2.5rem;
 
     &--main {
         display: block;
         font-size: 5.9rem;
         letter-spacing: 0px;
-        line-height: 85px;
+        // line-height: 85px;
         color: #000000;
         font-family: "DejaVuSans,AdobeInvisFont,MyriadHebrew-Regular,SamsungSharpSansK-Bold"
 
@@ -20,11 +20,13 @@
         color: #001320;
         font-family: "Samsung One";
         text-align: center;
+        font-weight: bold;
     }
 
     &--little {
         font-weight: normal;
         font-family: "Samsung One";
+        font-size: 1.8rem;
 
         span {
             display: block;
@@ -39,6 +41,10 @@
     font-weight: bold;
     font-family: "Samsung Sharp Sans K";
     text-align: center;
+
+    span {
+        display: block;
+    }
 }
 
 .simpletext {

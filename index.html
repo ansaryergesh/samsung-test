@@ -7,25 +7,27 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <nav class="navigation">
-        <div class="navigation--logo"><img src="img/samsung-logo-text-png-1.png" alt=""></div>
+        <div class="navigation--logo">
+            <img src="img/samsung-logo-text-png-1.png" alt="" />
+        </div>
         <div class="navigation--menu">
             <ul>
                 <li><a href="">Мобильные устройство</a></li>
                 <li><a href="">ТВ и аудио</a></li>
                 <li><a href="">Для дома</a></li>
                 <li><a href="">IT</a></li>
-                <!-- <li><a><i class="fa fa-search" style="font-size:18px"></i></a></li> -->
+                <li><i class="fa fa-search"></i></li>
                 <li><a href="">Акции</a></li>
                 <li><a href="">Поддержка</a></li>
                 <li><a href="">Бизнес</a></li>
@@ -35,17 +37,19 @@
     </nav>
 
     <header class="header">
-        <div class="header__logo-box">
-        </div>
+        <img class="imgdesktop" src="img/samsung_delivers-1440.jpg" alt="" />
         <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Выбери Galaxy A</span>
-                <span class="heading-primary--sub">Получи вкусный подарок с доставкой на дом!
-                </span>
-                <p class="heading-primary--little"><span>Купи смартфон серии Galaxy A.</span>
+            <div class="heading-primary">
+                <h1 class="heading-primary--main">Выбери Galaxy A</h1>
+                <h3 class="heading-primary--sub">
+                    Получи вкусный подарок с доставкой на дом!
+                </h3>
+                <p class="heading-primary--little">
+                    <span>Купи смартфон серии Galaxy A.</span>
                     <span>Получи промо-код на 5000 или 7000 тенге в приложении Glovo.</span>
-                    <span>Период акции: с 20 апреля по 26 апреля 2020 года</span></p>
-            </h1>
+                    <span>Период акции: с 20 апреля по 26 апреля 2020 года</span>
+                </p>
+            </div>
             <div class="header__links">
                 <a href="#" class="btn btn--white">Регистрация</a>
                 <a href="#" class="btn btn--underline btn--animated">Узнать больше</a>
@@ -56,27 +60,106 @@
         <h1 class="heading-secondary">Условия акции</h1>
         <div class="promo--boxes">
             <section class="promo--box">
-                <i><img src="img/icon 1.png" alt=""></i>
-                <p>Купи смартфон А-серии
-                    из списка ниже в магазинах официальных партнеров Samsung
+                <i><img src="img/icon 1.png" alt="" /></i>
+                <p>
+                    Купи смартфон А-серии из списка ниже в магазинах официальных
+                    партнеров Samsung
                 </p>
             </section>
             <section class="promo--box">
-                <i><img src="img/icon 2.png" alt=""></i>
-                <p>Зарегистрируй чек покупки
-                    на сайте, прикрепив его фото
-                </p>
+                <i><img src="img/icon 2.png" alt="" /></i>
+                <p>Зарегистрируй чек покупки на сайте, прикрепив его фото</p>
             </section>
             <section class="promo--box">
-                <i><img src="img/icon 3.png" alt=""></i>
-                <p>Получи промо-код на 5000 или 7000 тенге в в приложении Glovo.
-                </p>
+                <i><img src="img/icon 3.png" alt="" /></i>
+                <p>Получи промо-код на 5000 или 7000 тенге в в приложении Glovo.</p>
             </section>
         </div>
-        <div class="center"><a href="#" class="btn btn--white">Полные правила</a>
+        <div class="center">
+            <a href="#" class="btn btn--white">Полные правила</a>
         </div>
-        <p class="topmargin1 simpletext center">Доставка Glovo доступна в трех городах: Нур-Султан, Алматы и Шымкент</p>
+        <p class="topmargin1 simpletext center">
+            Доставка Glovo доступна в трех городах: Нур-Султан, Алматы и Шымкент
+        </p>
     </div>
+
+    <div class="registration">
+        <h1 class="heading-secondary">Регистрация</h1>
+        <p class="topmargin1 simpletext center">
+            Заполни форму ниже и участвуй в розыгрыше призов.
+        </p>
+        <section class="contact-wrap">
+            <form action="" class="contact-form">
+                <div class="input-blocks">
+                    <div class="input-block fullwidth">
+                        <label for="fio">ФИО</label>
+                        <input type="text" name="fio" id="fio" class="form-control" />
+                    </div>
+                    <div class="input-block fullwidth">
+                        <label for="gorod">Город</label>
+                        <input type="text" name="gorod" id="gorod" class="form-control" />
+                    </div>
+                    <div class="input-block">
+                        <label for="phone">Номер телефона</label>
+                        <input type="text" name="phone" id="phone" class="form-control" />
+                    </div>
+                    <div class="input-block">
+                        <label for="email">Ваш email</label>
+                        <input type="text" name="email" id="email" class="form-control" />
+                    </div>
+                    <div class="input-block">
+                        <label for="partner">Партнер</label>
+                        <input type="text" name="partner" id="partner" class="form-control" />
+                    </div>
+                    <div class="input-block">
+                        <label for="ustroistvo">Устройство</label>
+                        <input type="text" name="ustroistvo" id="ustroistvo" class="form-control" />
+                    </div>
+                    <div class="input-block fullwidth">
+                        <label for="partner">Устройство</label>
+                        <input type="text" name="partner" id="partner" class="form-control" />
+                    </div>
+                    <div class="input-block fullwidth">
+                        <label for="check">Загрузите чек</label>
+                        <input type="text" name="check" id="check" class="form-control" />
+                    </div>
+                </div>
+                <p>Размер фотографии не должен привышать 5Мб </p>
+                <div class="checkbox-block">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Я ознакомлен и согласен с правилами и условиями передачи персональных данных.
+                    </label><br>
+                </div>
+                <p>Убедитесь в правильности введенного электронного адреса и номера телефона. Мы отправим оповещение с
+                    результатом модерации.</p>
+                <div class="btn-submit center">
+                    <button class="btn btn--white">Отправить данные</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="phones">
+        <h1 class="heading-secondary">Модели смартфонов,<span> участвующие в Акции</span>
+        </h1>
+        <div class="phone-list">
+            <table>
+                <tr>
+                    <th>Модель</th>
+                    <th>Сумма промо-кода</th>
+
+                </tr>
+                <tr>
+                    <td>Galaxy-A51</td>
+                    <td>5000 тенге</td>
+                </tr>
+            </table>
+        </div>
+        <div class="center">
+            <button class="btn btn--white">Подробнее</button>
+        </div>
+        <img src="img/IMG@1X.png" alt="">
+    </div>
+
     <script src="script.js" async defer></script>
 </body>
 

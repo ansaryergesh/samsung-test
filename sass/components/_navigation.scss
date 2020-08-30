@@ -1,7 +1,7 @@
 .navigation {
     background-color: white;
     position: relative;
-    padding: .9rem;
+    padding: .9rem 7rem .9rem 2rem;
     font-size: 1.4rem;
     font-weight: bold;
     color: black;
@@ -21,7 +21,12 @@
             li {
                 float: none;
                 display: inline-block;
-                margin: 0 1.5rem;
+                // width: 50px;
+
+                &:not(:last-child),
+                &:not(:first-child) {
+                    margin: 0 1.5rem;
+                }
 
                 &:first-child {
                     margin: 0 !important;
@@ -57,4 +62,27 @@
         }
 
     }
+}
+
+@media (max-width: 1200px) {
+    .navigation {
+        padding: .9rem 0rem;
+        font-size: 1.2rem;
+
+        li {
+
+            &:first-child,
+            &:last-child {
+                margin: 0 !important;
+            }
+        }
+
+        a {
+            text-transform: none;
+        }
+    }
+}
+
+.imgdesktop {
+    width: 100%;
 }
