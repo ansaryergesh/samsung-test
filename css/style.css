@@ -90,92 +90,108 @@ a {
   font-size: 2.6rem;
   font-family: 'Samsung One'; }
 
-.navigation {
-  background-color: white;
-  position: relative;
-  padding: 0rem 5rem;
-  height: 45px;
-  font-size: calc(5px + (14 - 5) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: bold;
-  color: black; }
-  .navigation--moblogo {
-    display: none;
-    float: left;
-    width: 50%; }
-    @media (max-width: 767px) {
-      .navigation--moblogo {
-        display: block; } }
-  .navigation--search {
-    font-size: 80rem; }
-  .navigation--menu {
-    margin: 0 auto; }
-    .navigation--menu ul {
+.clearfix {
+  clear: both; }
+
+.center-outer {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .center-outer header {
+    display: block;
+    text-align: center;
+    padding: 1rem 8rem;
+    position: relative;
+    font-size: calc(8.5px + (14 - 8.5) * ((100vw - 768px) / (1600 - 768)));
+    background-color: white; }
+    @media (max-width: 768px) {
+      .center-outer header {
+        padding: 1px 2px; } }
+    @media (max-width: 768px) {
+      .center-outer header .nav {
+        width: 170px;
+        right: -1000px;
+        background: #000;
+        color: #000;
+        height: 100%; } }
+    .center-outer header ul {
       margin: 0;
       padding: 0; }
-      .navigation--menu ul li {
+      .center-outer header ul li {
         list-style: none;
         display: inline-block;
-        padding: 15px 7px;
-        text-transform: capitalize;
+        padding: 5px 8px;
+        text-transform: uppercase;
         border-bottom: 1px solid transparent; }
-        @media (max-width: 767px) {
-          .navigation--menu ul li {
-            display: block;
+        @media (max-width: 768px) {
+          .center-outer header ul li {
+            display: none;
             text-align: left;
-            border-bottom: 1px solid #cacaca;
-            padding: 8px 15px; } }
-        .navigation--menu ul li a {
+            border-bottom: 1px solid #cacaca; } }
+        .center-outer header ul li a {
           display: inline-block;
           color: #000;
           text-decoration: none; }
-          @media (max-width: 767px) {
-            .navigation--menu ul li a {
+          @media (max-width: 768px) {
+            .center-outer header ul li a {
               color: #fff;
               display: block; } }
-    .navigation--menu .left {
+    .center-outer header .menu-left {
       display: inline-block;
       text-align: left;
+      width: 45%;
       float: left; }
-    .navigation--menu .right {
+    .center-outer header .logo-center {
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media (max-width: 768px) {
+        .center-outer header .logo-center {
+          position: inherit;
+          display: none; } }
+      .center-outer header .logo-center img {
+        height: calc(50px + (80 - 50) * ((100vw - 768px) / (1600 - 768)));
+        display: inline-block; }
+        @media (max-width: 768px) {
+          .center-outer header .logo-center img {
+            display: none; } }
+    .center-outer header .mob-logo {
+      display: none;
+      float: left;
+      width: 10%; }
+      .center-outer header .mob-logo p {
+        width: 100%;
+        font-size: 16px;
+        color: #08088d;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding: 0;
+        margin: 0; }
+      @media (max-width: 768px) {
+        .center-outer header .mob-logo {
+          display: block; } }
+    .center-outer header .toggleNav {
+      display: none;
+      float: right; }
+      .center-outer header .toggleNav i:first-child {
+        margin-right: 10px; }
+      @media (max-width: 768px) {
+        .center-outer header .toggleNav {
+          display: block;
+          font-size: 16px; } }
+    .center-outer header .menu-right {
       display: inline-block;
       text-align: right;
+      width: 45%;
       float: right; }
-  .navigation a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.8); }
-  .navigation--logocenter {
-    width: 8%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
     @media (max-width: 767px) {
-      .navigation--logocenter {
-        display: none; } }
-
-@media (max-width: 768px) {
-  .navigation--menu {
-    display: none; }
-  .navigation--logo img {
-    position: inherit;
-    text-align: left; } }
-
-@media (max-width: 1200px) {
-  .navigation li:first-child, .navigation li:last-child {
-    margin: 0 !important; } }
-
-.imgdesktop {
-  width: 100%; }
-
-.logo-center {
-  display: inline-block;
-  text-align: center; }
-  @media (max-width: 767px) {
-    .logo-center {
-      display: none; } }
-  .logo-center p {
-    display: inline-block; }
+      .center-outer header .menu-left,
+      .center-outer header .menu-right {
+        float: none;
+        display: block;
+        width: 100%; } }
 
 .header {
   position: relative;
