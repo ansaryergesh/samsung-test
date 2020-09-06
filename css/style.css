@@ -107,7 +107,7 @@ a {
     background-color: white; }
     @media (max-width: 768px) {
       .center-outer header {
-        padding: 1px 2px; } }
+        padding: 1px 8px; } }
     @media (max-width: 768px) {
       .center-outer header .nav {
         width: 170px;
@@ -124,6 +124,8 @@ a {
         padding: 5px 8px;
         text-transform: uppercase;
         border-bottom: 1px solid transparent; }
+        .center-outer header ul li i {
+          font-size: calc(10px + (16 - 10) * ((100vw - 768px) / (1600 - 768))); }
         @media (max-width: 768px) {
           .center-outer header ul li {
             display: none;
