@@ -97,7 +97,8 @@ a {
   width: 100%;
   display: block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 25px; }
   .center-outer header {
     display: block;
     text-align: center;
@@ -223,8 +224,11 @@ a {
   .imgphone {
     display: inherit; }
   .header__text-box {
-    margin: 5rem 0;
+    margin-top: 5rem;
     position: inherit;
+    transform: none;
+    top: 0;
+    left: 0;
     text-align: center; } }
 
 .promo {

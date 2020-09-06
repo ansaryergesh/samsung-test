@@ -1,9 +1,4 @@
 .header {
-    // height: 75vh;
-    // background:
-    //     url(../img/samsung_delivers-1440.jpg) 50% 50% no-repeat;
-    // background-size: cover;
-    // background-position: top;
     position: relative;
     margin-bottom: 9.2rem;
 
@@ -13,6 +8,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
     }
 
     &__links {
@@ -44,13 +40,18 @@
 
     .imgphone {
         display: inherit;
+        padding: 0;
+        margin: 0;
     }
 
     .header {
 
         &__text-box {
-            margin: 5rem 0;
+            margin-top: 5rem;
             position: inherit;
+            transform: none;
+            top: 0;
+            left: 0;
             text-align: center;
         }
     }
