@@ -101,7 +101,7 @@ a {
   .navigation--moblogo {
     display: none;
     float: left;
-    width: 100%; }
+    width: 50%; }
     @media (max-width: 767px) {
       .navigation--moblogo {
         display: block; } }
@@ -145,7 +145,7 @@ a {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.8); }
   .navigation--logocenter {
-    width: 10%;
+    width: 8%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -155,13 +155,11 @@ a {
         display: none; } }
 
 @media (max-width: 768px) {
-  .navigation {
-    height: 0; }
-    .navigation--menu {
-      display: none; }
-    .navigation--logo img {
-      position: inherit;
-      text-align: left; } }
+  .navigation--menu {
+    display: none; }
+  .navigation--logo img {
+    position: inherit;
+    text-align: left; } }
 
 @media (max-width: 1200px) {
   .navigation li:first-child, .navigation li:last-child {
