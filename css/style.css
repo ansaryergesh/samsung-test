@@ -168,6 +168,15 @@ a {
 .imgdesktop {
   width: 100%; }
 
+.logo-center {
+  display: inline-block;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .logo-center {
+      display: none; } }
+  .logo-center p {
+    display: inline-block; }
+
 .header {
   position: relative;
   margin-bottom: 9.2rem; }

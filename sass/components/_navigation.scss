@@ -135,3 +135,21 @@
 .imgdesktop {
     width: 100%;
 }
+
+.clearfix {
+    clear: both;
+}
+
+.logo-center {
+    // width: 10%;
+    display: inline-block;
+    text-align: center;
+
+    @media (max-width:767px) {
+        display: none;
+    }
+
+    p {
+        display: inline-block;
+    }
+}
