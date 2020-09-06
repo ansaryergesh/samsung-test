@@ -12,6 +12,11 @@
         border-radius: 30px;
         border: 1px solid black;
         background-color: white;
+        font-size: calc(12px + (15 - 12) * ((100vw - 768px) / (1600 - 768)));
+
+        @media (max-width:768px) {
+            padding: 1.6rem 3rem;
+        }
 
         &:hover {
             background-color: black;
@@ -21,7 +26,8 @@
 
     &--underline {
         position: relative;
-        font-size: 1.3rem;
+
+        font-size: calc(10px + (13 - 10) * ((100vw - 768px) / (1600 - 768)));
 
         &:hover {
             color: black;
