@@ -48,6 +48,12 @@
 }
 
 .simpletext {
-    font-size: 2.6rem;
+    font-size: calc(22px + (26 - 22) * ((100vw - 767px) / (1600 - 767)));
     font-family: 'Samsung One';
+
+    span {
+        @media (max-width:425px) {
+            display: block;
+        }
+    }
 }

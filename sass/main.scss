@@ -5,36 +5,6 @@
 @import "components/header";
 @import "components/promo";
 
-// @media (max-width: 1200px) {
-//     .navigation {
-//         font-size: 95%;
-//     }
-// }
-
-// @media (max-width: 950px) {
-//     .navigation {
-//         font-size: 80%;
-//     }
-// }
-
-// @media (max-width: 850px) {
-//     .navigation {
-//         font-size: 75%;
-//     }
-// }
-
-// @media (max-width: 768px) {
-
-//     .navigation {
-//         position: relative;
-
-//         &--menu {
-//             display: none;
-//         }
-
-//     }
-
-// }
 
 .input-block {
     display: flex;
@@ -66,8 +36,6 @@
 
     input {
         margin-right: 15px;
-        height: 2.3rem;
-        width: 2.3rem;
     }
 }
 
@@ -80,7 +48,6 @@
 
     input,
     textarea {
-        // font-size: 1rem;
         border: 0.1px solid rgb(172, 171, 171);
         height: 5rem;
         max-height: 5rem;
@@ -107,7 +74,6 @@
     table {
         width: 60%;
         border-collapse: collapse;
-
         font-weight: normal;
         margin: 8rem auto;
         border: 1px solid #DEDDDD;

@@ -91,8 +91,11 @@ a {
     display: block; }
 
 .simpletext {
-  font-size: 2.6rem;
+  font-size: calc(22px + (26 - 22) * ((100vw - 767px) / (1600 - 767)));
   font-family: 'Samsung One'; }
+  @media (max-width: 425px) {
+    .simpletext span {
+      display: block; } }
 
 .clearfix {
   clear: both; }
@@ -170,7 +173,7 @@ a {
       width: 10%; }
       .center-outer header .mob-logo p {
         width: 100%;
-        font-size: 16px;
+        font-size: 20px;
         color: #08088d;
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -182,12 +185,14 @@ a {
     .center-outer header .toggleNav {
       display: none;
       float: right; }
+      .center-outer header .toggleNav i {
+        cursor: pointer; }
       .center-outer header .toggleNav i:first-child {
-        margin-right: 10px; }
+        margin-right: 16px; }
       @media (max-width: 768px) {
         .center-outer header .toggleNav {
           display: block;
-          font-size: 16px; } }
+          font-size: 25px; } }
     .center-outer header .menu-right {
       display: inline-block;
       text-align: right;
@@ -305,9 +310,7 @@ a {
   justify-content: space-between;
   align-items: center; }
   .checkbox-block input {
-    margin-right: 15px;
-    height: 2.3rem;
-    width: 2.3rem; }
+    margin-right: 15px; }
 
 .input-blocks {
   display: grid;
