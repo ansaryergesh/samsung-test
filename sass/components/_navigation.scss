@@ -2,7 +2,7 @@
     background-color: white;
     position: relative;
     padding: .9rem 7rem .9rem 2rem;
-    font-size: 1.4rem;
+    font-size: calc(5px + (14 - 5) * ((100vw - 300px) / (1600 - 300)));
     font-weight: bold;
     color: black;
 
@@ -64,10 +64,29 @@
     }
 }
 
+@media (max-width: 768px) {
+    .navigation {
+        &--menu {
+            display: none;
+            padding: 0 5rem;
+        }
+
+        &--logo {
+            // margin-left: 25rem;
+
+            img {
+                position: inherit;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 1200px) {
     .navigation {
         padding: .9rem 0rem;
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
 
         li {
 
@@ -78,7 +97,7 @@
         }
 
         a {
-            text-transform: none;
+            // text-transform: none;
         }
     }
 }

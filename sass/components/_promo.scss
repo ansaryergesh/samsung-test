@@ -6,7 +6,6 @@
         display: flex;
         margin: 8.5rem 0;
         justify-content: center;
-        // align-items: center;
     }
 
     &--box {
@@ -37,5 +36,37 @@
     .btn {
         font-size: 1.2rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+
+        margin: 10rem 5rem;
+
+        &--boxes {
+            display: flex;
+            flex-direction: column;
+            margin: 4rem auto;
+            justify-content: center;
+        }
+
+        &--box {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            font-family: "Samsung One";
+            position: relative;
+
+            &:last-child:after {
+                content: none;
+            }
+
+            &:after {
+                content: none;
+            }
+        }
+
+
     }
 }

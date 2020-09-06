@@ -135,6 +135,14 @@
     }
 }
 
+.advertisment {
+    p {
+        text-align: center !important;
+        font-size: 2.6rem;
+        font-family: "SamsungOne-400";
+    }
+}
+
 // tablet and above devices
 @media (min-width: 1440px) {
     .contact-wrap {
@@ -145,8 +153,6 @@
 
 @media (max-width: 768px) {
     .phones {
-
-
         table {
             width: 90%;
         }

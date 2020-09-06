@@ -4,7 +4,8 @@
 
     &--main {
         display: block;
-        font-size: 5.9rem;
+
+        font-size: calc(25px + (59 - 25) * ((100vw - 321px) / (1600 - 321)));
         letter-spacing: 0px;
         // line-height: 85px;
         color: #000000;
@@ -15,7 +16,7 @@
     &--sub {
         font-weight: normal;
         display: block;
-        font-size: 2.5rem;
+        font-size: calc(15px + (25 - 15) * ((100vw - 321px) / (1600 - 321)));
         letter-spacing: 0px;
         color: #001320;
         font-family: "Samsung One";
@@ -26,7 +27,7 @@
     &--little {
         font-weight: normal;
         font-family: "Samsung One";
-        font-size: 1.8rem;
+        font-size: calc(10px + (18 - 10) * ((100vw - 321px) / (1600 - 321)));
 
         span {
             display: block;
@@ -35,7 +36,7 @@
 }
 
 .heading-secondary {
-    font-size: 3.6rem;
+    font-size: calc(25px + (36 - 25) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 0px;
     color: #000000;
     font-weight: bold;

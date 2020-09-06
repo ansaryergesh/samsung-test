@@ -5,11 +5,13 @@
     cursor: pointer;
     font-family: "Samsung One";
     transition: .5s all;
+    outline: none;
 
     &--white {
         padding: 1.6rem 5rem;
         border-radius: 30px;
         border: 1px solid black;
+        background-color: white;
 
         &:hover {
             background-color: black;
@@ -37,7 +39,5 @@
             border-bottom: 1px solid black;
             transform: translateX(-50%);
         }
-
-
     }
 }

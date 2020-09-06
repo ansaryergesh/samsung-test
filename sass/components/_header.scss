@@ -31,3 +31,27 @@
         }
     }
 }
+
+.imgphone {
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .imgdesktop {
+        display: none;
+    }
+
+    .imgphone {
+        display: inherit;
+    }
+
+    .header {
+
+        &__text-box {
+            margin: 5rem 0;
+            position: inherit;
+            text-align: center;
+        }
+    }
+}
