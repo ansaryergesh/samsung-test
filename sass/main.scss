@@ -9,6 +9,10 @@
 .input-block {
     display: flex;
     flex-direction: column;
+
+    input {
+        width: 100%;
+    }
 }
 
 .contact-wrap {
@@ -35,14 +39,14 @@
     align-items: center;
 
     input {
-        margin-right: 15px;
+        width: 100%;
     }
 }
 
 .input-blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
     margin: 0 auto;
     margin-bottom: 2rem;
 
@@ -118,6 +122,15 @@
 }
 
 @media (max-width: 768px) {
+    .input-block {
+
+        grid-column: span 2;
+    }
+
+    .contact-form {
+        padding: 7rem 2rem 5rem 2rem;
+    }
+
     .phones {
         table {
             width: 90%;
