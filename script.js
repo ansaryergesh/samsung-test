@@ -1,21 +1,33 @@
-(function($){
-    function processForm( e ){
-        $.ajax({
-            url: 'http://localhost:3000/registrations',
-            dataType: 'jsonp',
-            type: 'post',
-            contentType: 'application/x-www-form-urlencoded',
-            data: JSON.stringify( { "fio": $('#fio').val(), "email": $('#email').val(), "city": $('#city').val() } ),
-            success: function( data, textStatus, jQxhr ){
-                $('#response pre').html( data );
-            },
-            error: function( jqXhr, textStatus, errorThrown ){
-                console.log( errorThrown );
-            }
-        });
+document.getElementById('contact-form').addEventListener('submit', addPost);
 
-        e.preventDefault();
-    }
-
-    $('#contact-form').submit( processForm );
-})(jQuery);
+function addPost(event) {
+    event.preventDefault();
+    
+    let gorod = document.getElementById('gorod').value;
+    let fio = document.getElementById('fio').value;
+    let email = document.getElementById('email').value;
+    const myPost = {
+        fio: fio,
+        email: email,
+        gorod: gorod
+    };
+    fetch('https://murmuring-plateau-95298.herokuapp.com/registrations', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            'Access-Control-Allow-Origin': '*',
+        },
+        body: JSON.stringify(myPost)
+    })
+    .then((res) => {
+        if (res.ok) {
+            return res.json() 
+        } else {
+            return Promise.reject({ status: res.status, statusText: res.statusText });
+        }   
+        
+    })
+    .then((data) => console.log(data))
+    .catch(err => console.log('Error message:', err.statusText));
+}
