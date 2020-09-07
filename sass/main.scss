@@ -114,6 +114,35 @@
     }
 }
 
+.input-block.error input {
+    border: 1px solid red;
+    box-shadow: 0 0 8px red;
+    outline: none;
+}
+
+small {
+    visibility: hidden;
+}
+
+.msg {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+input.error {
+    border: 1px solid #ff0000;
+}
+
+label.error {
+    color: #ff0000;
+    font-weight: normal;
+}
+
 // tablet and above devices
 @media (min-width: 1440px) {
     .contact-wrap {
